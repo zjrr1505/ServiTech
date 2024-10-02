@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+#tienda {
+    width: 300px; 
+    height: auto; 
+    margin-left: 20px; 
+}
+
+

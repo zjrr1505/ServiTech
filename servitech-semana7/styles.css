@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #004a99;
+    --secondary-color: #003580;
+    --light-color: #f4f4f4;
+    --dark-color: #333;
+    --accent-color: #66b2ff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 6px var(--shadow);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px; 
+    background: url('https://t4.ftcdn.net/jpg/02/34/34/27/360_F_234342732_d9wZGQwDh8p0EZTeSh2ni1WIbfB76XBZ.webp') no-repeat center center;
+    background-size: cover; 
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px var(--shadow);
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 900px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 4px 12px var(--shadow);
+    transform: translateY(-5px);
+}
+
+section h2, section h3 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+}
+
+.service-images {
+    display: flex;
+    gap: 15px; 
+    justify-content: center; 
+    margin: 20px 0; 
+}
+
+.service-images img {
+    max-width: 45%; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px var(--shadow);
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    flex: 1 1 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px var(--shadow);
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.service-item:hover {
+    box-shadow: 0 4px 12px var(--shadow);
+    transform: translateY(-5px);
+}
+
+.service-item img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 30px auto 0;
+}
+
+.contact {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px var(--shadow);
+    width: 90%;
+    max-width: 900px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact fieldset {
+    border: none;
+    padding: 0;
+}
+
+.contact legend {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px var(--accent-color);
+}
+
+.contact button {
+    padding: 12px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+footer {
+    background: var(--dark-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    font-size: 0.9rem;
+    position: relative;
+    margin-top: 20px;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}

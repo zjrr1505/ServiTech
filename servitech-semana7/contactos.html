@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiTech - Soluciones Electrónicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bloque.css">
+    <link rel="icon" type="img/png"  href="/img/servitech2.png">
+    <style>
+        .contact-info {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .contact-info h2 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .map-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hours {
+            text-align: center;
+            margin: 20px auto;
+            font-size: 1rem;
+        }
+
+        .linktree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin: 20px auto;
+        }
+
+        .linktree a {
+            display: block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 200px;
+        }
+
+        .linktree a:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+
+        .intro {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .intro img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .informacion {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .info {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .info h1 {
+            color: var(--primary-color);
+        }
+
+        .info h2 {
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Navegación principal">
+            <a class="nav-link" href="index.html">Inicio</a>
+            <!--a class="nav-link" href="numeros.html">Números</a-->
+            <a class="nav-link" href="productos.html">Productos</a>
+            <!--a class="nav-link" href="servicios.html">Servicios</a-->
+            <a class="nav-link" href="contactos.html">Contacto</a>
+            <a class="nav-link" href="login.html">Login</a>
+        </nav>
+        <h1>ServiTech - Soluciones Electrónicas</h1>
+    </header>
+
+    <main>
+
+        <section class="informacion">
+            <div class="info mision">
+                <h1>MISIÓN</h1>
+                <h2>Pensar en las necesidades de nuestros clientes, ofreciéndoles de manera oportuna y ágil productos. Asesoría y servicios de calidad.</h2>
+            </div>
+            <div class="info vision">
+                <h1>VISIÓN</h1>
+                <h2>Queremos convertirnos en el proveedor de confianza para nuestros clientes, ofreciéndoles soluciones personalizadas, asesoramientos satisfaciendo sus necesidades tecnológicas y de hogar con garantía.</h2>
+            </div>
+            <div class="info valores">
+                <h1>VALORES</h1>
+                <h2>En ServiTech buscamos estar atentos a las nuevas tendencias para conseguir ofrecer siempre los productos más actuales del mercado. Logrando nuestros objetivos y colaborando con todos nuestros socios comerciales con compromiso e integridad.</h2>
+            </div>
+            <ul>
+                <li id="tituloHorario">HORARIO DE ATENCIÓN</li>
+                <li>Lunes 08:00 am - 20:00 pm</li>
+                <li>Martes 08:00 am - 20:00 pm</li>
+                <li>Miércoles 08:00 am - 20:00 pm</li>
+                <li>Jueves 08:00 am - 20:00 pm</li>
+                <li>Viernes 08:00 am - 20:00 pm</li>
+                <li>Sábado 08:00 am - 20:00 pm</li>
+                <li>Domingo - CERRADO</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contacta con Nosotros</h2>
+            <p>Para cualquier consulta, puedes ponerte en contacto con nosotros a través de los siguientes enlaces:</p>
+
+            <div class="linktree">
+                <a href="https://www.tiktok.com/@compuelectric" target="_blank">TikTok</a>
+                <a href="https://www.instagram.com/compuelectric" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/compuelectric" target="_blank">Facebook</a>
+                <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ServiTech. Todos los derechos reservados.</p>
+        <p><a href="mailto:info@servitech.com">info@servitech.com</a></p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+        <p><a href="#">WhatsApp</a> | <a href="#">Facebook</a> | <a href="#">Tiktok</a> | <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>
